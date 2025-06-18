@@ -1,11 +1,12 @@
-[gd_scene load_steps=11 format=4 uid="uid://beym2plegr8kn"]
+[gd_scene load_steps=12 format=4 uid="uid://beym2plegr8kn"]
 
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="1_bflcq"]
-[ext_resource type="Texture2D" uid="uid://07k43id4c81h" path="res://scenes/quests/story_quests/template/0_template_intro/template_intro_components/template_Replace image.png" id="2_073ws"]
+[ext_resource type="Texture2D" uid="uid://dl6o7vcf2fyc" path="res://assets/first_party/towers/Tower_Patchwork_Ruined1.png" id="2_531qw"]
 [ext_resource type="SpriteFrames" uid="uid://vwf8e1v8brdp" path="res://scenes/quests/story_quests/template/template_player_components/template_player.tres" id="3_8uvpf"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_0b3ke"]
 [ext_resource type="Resource" uid="uid://cqjngitoc5yx7" path="res://scenes/quests/story_quests/template/0_template_intro/template_intro_components/template_intro.dialogue" id="5_tfe4p"]
 [ext_resource type="PackedScene" uid="uid://v3usqiwy5wpr" path="res://scenes/game_elements/props/decoration/rock/rock.tscn" id="6_51fxy"]
+[ext_resource type="Texture2D" uid="uid://bhqanyxhpxpm" path="res://assets/first_party/rocks/Rock_Idle.png" id="7_531qw"]
 
 [sub_resource type="Animation" id="Animation_ld06i"]
 length = 0.001
@@ -110,14 +111,14 @@ metadata/_edit_lock_ = true
 [node name="IntroImage" type="Sprite2D" parent="TileMapLayers"]
 position = Vector2(770, 227)
 scale = Vector2(0.802083, 0.802083)
-texture = ExtResource("2_073ws")
+texture = ExtResource("2_531qw")
 
 [node name="Sand" type="TileMapLayer" parent="TileMapLayers"]
 tile_map_data = PackedByteArray("AAAKAAEABgAAAAAAAAAKAAIABgADAAEAAAAKAAMABgADAAEAAAAKAAQABgADAAEAAAANAAEABgACAAAAAAANAAIABgADAAEAAAANAAMABgADAAEAAAANAAQABgADAAEAAAAKAAUABgAAAAIAAAALAAEABgABAAMAAAALAAUABgABAAMAAAAMAAEABgABAAMAAAAMAAUABgABAAMAAAANAAUABgACAAIAAAAAAAcAAQAGAAMAAAABAAcAAQAGAAMAAAACAAcAAQAGAAMAAAADAAcAAQAGAAMAAAAEAAcAAQAGAAMAAAAFAAcAAQAGAAMAAAAGAAcAAQAGAAMAAAAHAAcAAQAGAAMAAAAIAAcAAQAGAAMAAAAJAAcAAQAGAAMAAAAKAAcAAQAGAAMAAAALAAcAAQAGAAMAAAAMAAcAAQAGAAMAAAANAAcAAQAGAAMAAAAOAAcAAQAGAAMAAAA=")
 tile_set = ExtResource("1_bflcq")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(153, 366)
+position = Vector2(204, 358)
 zoom = Vector2(2, 2)
 limit_left = 0
 limit_top = 0
@@ -134,6 +135,7 @@ position = Vector2(400, 349)
 sprite_frames = ExtResource("3_8uvpf")
 animation = &"idle"
 autoplay = "idle"
+frame_progress = 0.628464
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="OnTheGround"]
 root_node = NodePath("../..")
@@ -151,4 +153,9 @@ next_scene = "uid://coi4lvxir542y"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="Rock" parent="." instance=ExtResource("6_51fxy")]
-position = Vector2(125, 403)
+position = Vector2(140, 361)
+
+[node name="RockIdle" type="Sprite2D" parent="."]
+position = Vector2(228, 182)
+scale = Vector2(0.835938, 0.84375)
+texture = ExtResource("7_531qw")
