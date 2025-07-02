@@ -167,12 +167,32 @@ sprite_frames = SubResource("SpriteFrames_v5j8b")
 frame_progress = 0.307327
 
 [node name="arbol15" type="AnimatedSprite2D" parent="OnTheGround"]
-position = Vector2(465, 191)
+position = Vector2(539, 291)
 sprite_frames = SubResource("SpriteFrames_v5j8b")
 frame_progress = 0.307327
 
 [node name="arbol12" type="AnimatedSprite2D" parent="OnTheGround"]
-position = Vector2(407, 276)
+position = Vector2(395, 292)
+sprite_frames = SubResource("SpriteFrames_v5j8b")
+frame_progress = 0.307327
+
+[node name="arbol16" type="AnimatedSprite2D" parent="OnTheGround"]
+position = Vector2(616, 332)
+sprite_frames = SubResource("SpriteFrames_v5j8b")
+frame_progress = 0.307327
+
+[node name="arbol17" type="AnimatedSprite2D" parent="OnTheGround"]
+position = Vector2(712, 333)
+sprite_frames = SubResource("SpriteFrames_v5j8b")
+frame_progress = 0.307327
+
+[node name="arbol18" type="AnimatedSprite2D" parent="OnTheGround"]
+position = Vector2(663, 295)
+sprite_frames = SubResource("SpriteFrames_v5j8b")
+frame_progress = 0.307327
+
+[node name="arbol19" type="AnimatedSprite2D" parent="OnTheGround"]
+position = Vector2(724, 292)
 sprite_frames = SubResource("SpriteFrames_v5j8b")
 frame_progress = 0.307327
 
