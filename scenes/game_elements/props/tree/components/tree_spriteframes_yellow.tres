@@ -2,13 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://dubprvh05825y" path="res://scenes/game_elements/props/tree/components/Tree_Yellow.png" id="1_nagfm"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_0dnls"]
-atlas = ExtResource("1_nagfm")
-region = Rect2(0, 0, 192, 192)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_30etr"]
 atlas = ExtResource("1_nagfm")
 region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0dnls"]
+atlas = ExtResource("1_nagfm")
+region = Rect2(0, 0, 192, 192)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3au8u"]
 atlas = ExtResource("1_nagfm")
@@ -30,10 +30,10 @@ region = Rect2(960, 0, 192, 192)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_0dnls")
+"texture": SubResource("AtlasTexture_30etr")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_30etr")
+"texture": SubResource("AtlasTexture_0dnls")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3au8u")
