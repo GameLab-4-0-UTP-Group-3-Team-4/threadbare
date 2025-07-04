@@ -1,0 +1,8 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+Criatura Ilusoria: ¿No reconoces tu hogar?
+Criatura Ilusoria: ¿No extrañaste esto?
+{{player_name}}: Dime que sucedió
+Criatura Ilusoria: Ya lo descubrirás
+=> END
