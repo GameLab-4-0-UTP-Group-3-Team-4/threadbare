@@ -152,7 +152,7 @@ scale = Vector2(0.0835744, 0.352768)
 curve = SubResource("Curve2D_vnsq3")
 
 [node name="Guard1-GoingBackAndForth3" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("4_css7h")]
-position = Vector2(-4336, 17)
+position = Vector2(-4336, 17.0001)
 sprite_frames = ExtResource("6_vgfe7")
 patrol_path = NodePath("../Guard1-PatrolPath3")
 move_speed = 200.0
@@ -284,7 +284,7 @@ debug_color = Color(0, 0, 0, 0.42)
 
 [node name="CollectibleItem" parent="." instance=ExtResource("8_u5xyt")]
 position = Vector2(2301, 981)
-next_scene = "uid://55ma352krq5m"
+next_scene = "uid://djd13jgeg8n0d"
 item = SubResource("Resource_idy4y")
 collected_dialogue = ExtResource("14_4fku5")
 
